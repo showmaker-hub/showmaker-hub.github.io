@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tianhao.ltd/note/how-to-use-markdown/</loc>
+    
+    <lastmod>2021-10-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tianhao.ltd/reply.html</loc>
     
     <lastmod>2021-10-23</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://tianhao.ltd/posts/always-like-this/</loc>
     
     <lastmod>2020-12-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tianhao.ltd/note/how-to-use-markdown/</loc>
-    
-    <lastmod>2020-10-30</lastmod>
     
   </url>
   
