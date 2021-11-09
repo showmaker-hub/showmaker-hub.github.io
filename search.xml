@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>如何实现远程控制电脑</title>
+      <link href="/note/how-to-connect-remotePC/"/>
+      <url>/note/how-to-connect-remotePC/</url>
+      
+        <content type="html"><![CDATA[<p>　因为最近为期一周实训，需要用到keil5编译器，自己的电脑带上充电器有3.65kg实在是太重了，来回拿不方便，于是昨天晚上想了几种方法，最终找到一种最简单的</p><span id="more"></span><p>#设备两种远程连接方式</p><p>##TCP<br>　TCP强制执行数据包排序，并且有一个检查实际通过的消息的方法。所以它更可靠。在吞吐量方面 - 例如，在特定时间内传输的数据量 - 实际上它们大致相同。</p><p>##UDP<br>　UDP的优点是延迟较低。因为它不检查订购或确认收到数据包 - 您的程序在到达时收到数据包。没有等待确认。以牺牲可靠性为代价，UDP几乎总能提供比TCP更好的性能。</p><p>#应用层实现方法<br>##局域网实现(win家庭版不支持)<br> -首先打开远程控制请求</p><div align="center">    <img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/1.jpg" width="50%" loading="lazy">    </div><p> -确定防火墙已关闭</p><p> -cmd输入ipconfig查看自己ip地址</p><p> -cmd输入mstrc,输入ip和计算机密码即可实现远程桌面</p><blockquote><p>~~连接成功后，你的远程电脑就会立刻进入待机状态，并且丝毫不影响你本地电脑的工作哦</p></blockquote><p>##外网实现<br>###端口映射<br>  需要做端口映射，原理就是给你的路由器发送一个识别请求，这样才能确认是你发送的数据</p><p>###内网穿透<br>  内网穿透 简单说就是用你的内网服务器绑定一个公网ip，远程PC访问公网ip进行数据交换，小白实现起来过于复杂，推荐用第三方<br>####市面上主流的FRP服务<br>经过比较和测试，整理了下面几家内网穿透服务商供参考：</p><p>-浮居FRP<br>-量子互联<br>-Sakura Frp<br>-花生壳<br>以上四家内网穿透服务商均提供免费节点，付费服务也都比较稳定，适合长期使用。</p><blockquote><p>~~当然，FRP服务商不限于这些，如果你有自己的内网穿透服务商，都可以配置实现远程桌面的功能。</p></blockquote><p>####配置端口映射服务<br>　　以浮居FRP为例，展示如何通过配置内网穿透服务。<br><img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/2.png" alt="详情" loading="lazy"><br>　　首先，需要选择合适的节点。免费节点一般资源有限，但基本足够使用。所有节点均可以穿透远程桌面服务，因此尽量选择国内节点即可。<br><img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/3.png" alt="详情" loading="lazy"><br>　如上图所示进行配置。其中，“本地端口”应填写第一步记下的远程桌面的端口号。</p><p>　远程端口填写一个10000-19999范围内，顺口好记的端口即可，<strong>一会儿连接时会需要这个端口。</strong></p><p>　绑定域名可填可不填。<br><img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/4.png" alt="详情" loading="lazy"><br>　高级设置无需填写。<br>####下载并配置FRP管理软件<br>如果你使用浮居FRP作为服务商，建议使用koho大神开发的frpmgr软件：</p><p><a href="https://down.frp.cool/client/frpmgr-1.3.2.msi">开发包</a></p><p>__如果你使用了其他服务商提供的端口映射服务，应当使用其他服务商提供的软件__，这里我们仅以浮居FRP作为例子。</p><p><img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/5.png" alt="详情" loading="lazy"><br>选择配置文件，复制配置文件内容，并创建一个配置文件“frp.ini”粘贴进去。</p><p>（如果你不知道该如何修改文件扩展名，请<a href="https://www.baidu.com/">百度</a>。）</p><p>frpmgr 默认安装到：C:\Program Files\FRP，运行该目录下的frpmgr.exe。</p><p><img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/6.png" alt="详情" loading="lazy"><br>点击“新建配置”，打开刚刚创建的配置文件，导入配置。</p><p>然后选中配置，点击“启动”按钮。</p><p><img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/7.png" alt="详情" loading="lazy"></p><p>至此，端口映射配置完毕。frpmgr软件在开机时会自动启动端口映射，因此远程桌面的端口转发会自动生效，无需手动启动。<br>####连接测试<br>端口映射配置完成后，接下来测试是否可以正常连接。</p><p>随意选择一台<strong>电脑</strong>或<strong>手机</strong>，作为控制端。</p><blockquote><p>~~手机版软件名为微软远程桌面，图标如下图：</p><div align="left">    <img src="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/images1/8.png" width="80" loading="lazy">  </div>自行至应用商店或网络下载！##第三方(方法简单)###向日葵远程助手[向日葵官网](https://sunlogin.oray.com/) -下载向日葵远程工具，在客户端注册登陆账号，也可以使用绿色版，无需绑定账号</blockquote><p> -电脑打开主界面，可以看到本机的识别码和验证码。</p><p> -记住识别码，并在控制电脑上输入</p><p> -输入后，点击接受连接就可以了，连接成功即可进行远程操作。</p><p>###TeamViewer<br><a href="https://www.teamviewer.com/">TeamView官网</a>：最成熟的远程软件，具有会议、电话‘远程桌面等多种功能</p><p>　Teamviewer使用UDP作为其主要协议来建立与远程计算机的连接。他们只在UDP失败时才使用TCP<br>  只需要注册一个账户就可以，个人版只能两个设备之前交互</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 初意的小笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>百度网盘下载不限速教程</title>
       <link href="/share/BaiduYunpan/"/>
       <url>/share/BaiduYunpan/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>本教程仅限于需要下载少量文件，又不想开通SVIP的同学，如果有大量文件下载请去官网开通会员<br>原理：利用开了svip的网盘账户解析出来高速链接，然后记录数据库中提供给你<br>环境：电脑，手机均可<br>需要工具： IDM＋云解析</p></blockquote><p>侵权联系<a href="mailto:&#x63;&#104;&#117;&#121;&#105;&#x36;&#54;&#54;&#50;&#48;&#50;&#x31;&#64;&#x31;&#x36;&#51;&#x2e;&#x63;&#111;&#x6d;">&#x63;&#104;&#117;&#121;&#105;&#x36;&#54;&#54;&#50;&#48;&#50;&#x31;&#64;&#x31;&#x36;&#51;&#x2e;&#x63;&#111;&#x6d;</a></p><span id="more"></span>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>本教程仅限于需要下载少量文件，又不想开通SVIP的同学，如果有大量文件下载请去官网开通会员<br>原理：利用开了svip的网盘账户解析出来高速链接，然后记录数据库中提供给你<br>环境：电脑，手机均可<br>需要工具： IDM＋云解析</p></blockquote><p>侵权联系<a href="mailto:&#x63;&#x68;&#x75;&#x79;&#105;&#54;&#x36;&#54;&#x32;&#48;&#x32;&#x31;&#64;&#49;&#54;&#51;&#46;&#x63;&#111;&#x6d;">&#x63;&#x68;&#x75;&#x79;&#105;&#54;&#x36;&#54;&#x32;&#48;&#x32;&#x31;&#64;&#49;&#54;&#51;&#46;&#x63;&#111;&#x6d;</a></p><span id="more"></span>]]></content>
       
       
       <categories>
