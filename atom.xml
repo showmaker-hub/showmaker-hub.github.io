@@ -6,7 +6,7 @@
   <link href="https://tianhao.ltd/atom.xml" rel="self"/>
   
   <link href="https://tianhao.ltd/"/>
-  <updated>2021-11-09T07:00:58.000Z</updated>
+  <updated>2021-11-22T08:32:55.000Z</updated>
   <id>https://tianhao.ltd/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo添加b站外链</title>
+    <link href="https://tianhao.ltd/note/bilibili-links/"/>
+    <id>https://tianhao.ltd/note/bilibili-links/</id>
+    <published>0202-11-22T08:24:12.000Z</published>
+    <updated>2021-11-22T08:32:55.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;　　Hexo搭建博客后，如果想在博客中分享视频，避免网站服务器带宽的限制，需要添加其他视频网站的外链播放器，具体该怎么操作呢？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="初意的小笔记" scheme="https://tianhao.ltd/categories/%E5%88%9D%E6%84%8F%E7%9A%84%E5%B0%8F%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="学习" scheme="https://tianhao.ltd/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="笔记" scheme="https://tianhao.ltd/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>如何实现远程控制电脑</title>
@@ -48,7 +69,7 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;本教程仅限于需要下载少量文件，又不想开通SVIP的同学，如果有大量文件下载请去官网开通会员&lt;br&gt;原理：利用开了svip的网盘账户解析出来高速链接，然后记录数据库中提供给你&lt;br&gt;环境：电脑，手机均可&lt;br&gt;需要工具： IDM＋云解析&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;侵权联系&lt;a href=&quot;mailto:&amp;#x63;&amp;#104;&amp;#117;&amp;#121;&amp;#x69;&amp;#x36;&amp;#x36;&amp;#54;&amp;#x32;&amp;#48;&amp;#50;&amp;#49;&amp;#64;&amp;#49;&amp;#x36;&amp;#51;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x63;&amp;#104;&amp;#117;&amp;#121;&amp;#x69;&amp;#x36;&amp;#x36;&amp;#54;&amp;#x32;&amp;#48;&amp;#50;&amp;#49;&amp;#64;&amp;#49;&amp;#x36;&amp;#51;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/p&gt;</summary>
+&lt;p&gt;侵权联系&lt;a href=&quot;mailto:&amp;#x63;&amp;#104;&amp;#117;&amp;#121;&amp;#105;&amp;#x36;&amp;#54;&amp;#x36;&amp;#50;&amp;#48;&amp;#50;&amp;#x31;&amp;#x40;&amp;#x31;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x63;&amp;#104;&amp;#117;&amp;#121;&amp;#105;&amp;#x36;&amp;#54;&amp;#x36;&amp;#50;&amp;#48;&amp;#50;&amp;#x31;&amp;#x40;&amp;#x31;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
