@@ -1,4 +1,4 @@
-/* global CONFIG */
+/* global Yun, CONFIG */
 
 /**
  * 显示一句话
@@ -47,7 +47,3 @@ function fetchApiToSay() {
       });
   }
 }
-document.addEventListener("DOMContentLoaded", fetchApiToSay);
-document.addEventListener("pjax:success", () => {
-  Yun.utils.isHome() ? fetchApiToSay() : null;
-});
