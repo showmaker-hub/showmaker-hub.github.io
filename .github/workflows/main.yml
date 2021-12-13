@@ -1,11 +1,11 @@
-name: Deploy My_Blog  #自动化的名称
+name: Deploy hexo  #自动化的名称
 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push: # push的时候触发
-    branches: [ main ]  # 哪些分支需要触发
+    branches: [ master ]  # 哪些分支需要触发
   pull_request:  
-    branches: [ dev ]
+    branches: [ hexo ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
