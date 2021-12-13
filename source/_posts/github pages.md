@@ -1,10 +1,11 @@
 ---
 title: 使用 GitHub Actions 自动部署博客
-date: 2020-02-10
+date: 2021-12-13 16:24:55
 tags:
 - Github
 - VuePress
 - 博客
+readmore: true
 categories: 
  - 初意的小笔记
 ---
@@ -36,7 +37,6 @@ categories:
 
 那么开始打造我们的 GitHub Actions 吧。
 
-我创建了一个[示例项目](https://github.com/LasyIsLazy/gh-pages-Actions-demo)在我的 GitHub 仓库，用的是 VuePress（一个 Vue 官方的静态站点生成器）。
 
 ## 设置 Secrets
 
@@ -124,8 +124,6 @@ jobs:
 
 如果部署失败你会收到一封部署失败的邮件
 
-![1WR8YQ.png](https://s2.ax1x.com/2020/02/08/1WR8YQ.png)
-
 点击可以跳转到仓库的 Action 页面查看日志
 
 ![1WRclR.png](https://s2.ax1x.com/2020/02/08/1WRclR.png)
@@ -155,10 +153,6 @@ jobs:
 ![147bLD.png](https://s2.ax1x.com/2020/02/10/147bLD.png)
 
 部署成功，全是绿色~
-
-接下来访问网站验证一下：[https://lasyislazy.github.io/gh-pages-action-demo/](https://lasyislazy.github.io/gh-pages-action-demo/)
-
-![1W4BuR.png](https://s2.ax1x.com/2020/02/08/1W4BuR.png)
 
 完美结束，享受 GitHub Actions 带来的愉快体验吧~
 
@@ -200,16 +194,10 @@ jobs:
 
 实在找不到就得自己写 action 了，本篇就不讨论了。
 
-以上便是本篇教程全部内容，本篇首发于我的个人博客：[https://www.lasy.site/](https://www.lasy.site/)
-
-:::tip
-本文作者 [Lasy](https://github.com/LasyIsLazy)，博客 [Lasy](https://www.lasy.site)。
-:::
 
 参考链接：
 
 - [https://help.github.com/en/github/working-with-github-pages/about-github-pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
 - [https://help.github.com/cn/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions](https://help.github.com/cn/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
 - [http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
-  
 
