@@ -74,7 +74,7 @@ random: true
 <summary>交换友链点我</summary>
 欢迎交换友链，需要请联系<a href="chuyi:chuyi6662021@163.com">chuyi6662021@163.com</a>或者左边QQ小图标联系我的QQ~~<br>
 网站名称：初意的小站<br>
-网站地址：<a href="https://tianhao.ltd">tianhao.ltd</a><br>
+网站地址：<a href="https://www.cyxtt.top">www.cyxtt.top</a><br>
 网站简介：生活就该是五彩缤纷的。<br>
 网站头像：
 ① <a href="https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/avatar.jpg">https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/avatar.jpg</a><br>

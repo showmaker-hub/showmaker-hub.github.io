@@ -144,7 +144,7 @@ github_discussions:
 notice:
   enable: true
   content: 欢迎参观我的博客!!<br>
-           主站：tianhao.ltd<br>
+           主站：cyxtt.top<br>
            备用一：wth521.gitee.io<br>
            备用二：showmaker-hub.github.io
 
@@ -152,7 +152,7 @@ footer:
   since: 2020
   beian:
     enable: true
-    icp: 豫ICP备2021029143号-1
+    icp: 豫ICP备2021029143号
   live_time:
     enable: true
     prefix: 本博客已萌萌哒地运行

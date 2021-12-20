@@ -13,7 +13,7 @@ keywords:
   - 博客
   - 初意的小站
   - 初意小团团
-  - tianhao.ltd
+  - www.cyxtt.top
 author: 初意
 # language:
 #   - zh-CN
@@ -23,7 +23,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
-url: https://tianhao.ltd
+url: https://www.cyxtt.top
 root: /
 # posts/:name/
 permalink: :title/ # :category/:title
