@@ -329,7 +329,7 @@ wordcount:
 
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/showmaker-hub/cdn@main/bg.png # recomend image related to your mode
+  url: https://fastly.jsdelivr.net/gh/showmaker-hub/cdn@main/bg.png # recomend image related to your mode
   dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
   # blur: 30px
   opacity: 0.8
