@@ -43,7 +43,6 @@ head:
   js:
     defer:
       aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
-      loadAplayer: /js/load-aplayer.js
       sakura: /js/sakura.js
 
 sakura:
@@ -145,8 +144,7 @@ notice:
   enable: true
   content: 欢迎参观我的博客!!<br>
            主站：cyxtt.top<br>
-           备用一：wth521.gitee.io<br>
-           备用二：showmaker-hub.github.io
+           备用：showmaker-hub.github.io
 
 footer:
   since: 2020
@@ -206,7 +204,7 @@ engine_search:
 
 post_edit:
   enable: true
-  url: https://github.com/showmaker-hub/hexo-blog/tree/hexo/source/
+  url: https://github.com/showmaker-hub/showmaker-hub.github.io/tree/hexo/source/
 
 albums:
   enable: true
