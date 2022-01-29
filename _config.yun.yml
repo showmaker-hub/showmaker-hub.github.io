@@ -29,7 +29,6 @@ preload:
 prefetch:
   script:
     - /js/sakura.js
-
 codeblock:
   copy_btn: true
   prismjs:
@@ -42,8 +41,8 @@ head:
   js:
     defer:
       aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js
+      loadAplayer: /js/load-aplayer.js
       sakura: /js/sakura.js
-
 sakura:
   enable: true
 
@@ -53,7 +52,7 @@ aplayer:
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
   widget:
     enable: true
-    autoplay: true
+    autoplay: false
     # theme: "#2980b9"
     loop: all
     order: list
