@@ -25,10 +25,11 @@ preload:
   script:
     - /js/hexo-theme-yun.js
     - /js/say.js
-
+    
 prefetch:
   script:
     - /js/sakura.js
+    - /js/load-aplayer.js
 codeblock:
   copy_btn: true
   prismjs:
