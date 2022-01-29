@@ -28,7 +28,6 @@ preload:
 
 prefetch:
   script:
-    - /js/sidebar.js
     - /js/sakura.js
 
 codeblock:
@@ -54,7 +53,7 @@ aplayer:
   # https://github.com/metowolf/MetingJS/tree/v1.2#option
   widget:
     enable: true
-    autoplay: false
+    autoplay: true
     # theme: "#2980b9"
     loop: all
     order: list
