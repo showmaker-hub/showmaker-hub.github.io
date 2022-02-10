@@ -1,7 +1,7 @@
 ---
 title: GitHub Actions 自动部署博客
 date: 2021-12-13 16:24:55
-update: 2021-12-13 17:54:55
+update: 2021-12-14 17:54:55
 tags:
 - Github
 - VuePress
