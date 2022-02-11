@@ -194,10 +194,3 @@ jobs:
 
 实在找不到就得自己写 action 了，本篇就不讨论了。
 
-
-参考链接：
-
-- [https://help.github.com/en/github/working-with-github-pages/about-github-pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
-- [https://help.github.com/cn/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions](https://help.github.com/cn/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions)
-- [http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
-
